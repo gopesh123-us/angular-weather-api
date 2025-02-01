@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   displayCity: string = '';
   displayRegionCountry: string = '';
   image: string = '';
-  temp_f: string = '';
+  temp_c: string = '';
   windspeed: string = '';
   humidity: string = '';
 
@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
       this.displayCity = `${data.location.name}`;
       this.displayRegionCountry = `${data.location.region}, ${data.location.country}`;
       this.image = data.current.condition.icon;
-      this.temp_f = `Temperature: ${data.current.temp_f}°F`;
+      this.temp_c = `Temperature: ${data.current.temp_c}°C`;
       this.windspeed = `Windspeed: ${data.current.wind_kph}km/h`;
       this.humidity = `Humidity: ${data.current.humidity}%`;
     });
@@ -46,7 +46,7 @@ export class HomeComponent implements OnInit {
     this.displayCity = '';
     this.displayRegionCountry = '';
     this.image = '';
-    this.temp_f = '';
+    this.temp_c = '';
     this.windspeed = '';
     this.humidity = '';
   }
