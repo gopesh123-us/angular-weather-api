@@ -9,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   title: string = 'weather app';
+  city: string = '';
+  displayCity: string = '';
+  setCity(event: any) {
+    this.city = event.target.value;
+    if (event.target.value == '') {
+      this.city = '';
+      this.displayCity = '';
+    }
+  }
+  showCity() {
+    this.displayCity = this.city;
+  }
 }

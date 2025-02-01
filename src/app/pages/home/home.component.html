@@ -1,7 +1,13 @@
 <div class="container">
   <div class="weather">
     <h1>{{ title | titlecase }}</h1>
-    <input class="input" type="text" placeholder="Enter City or Zip code" />
-    <button class="btn">Check Weather</button>
+    <input
+      class="input"
+      type="text"
+      placeholder="Enter City or Zip code"
+      (input)="setCity($event)"
+    />
+    <button class="btn" (click)="showCity()">Check Weather</button>
+    <p>{{ displayCity }}</p>
   </div>
 </div>
