@@ -50,3 +50,12 @@ h1 {
 .btn:hover {
   background-color: rgb(166, 161, 161);
 }
+p {
+  font-size: 1.2rem;
+  color: #2a2929;
+}
+.region-country {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(42, 41, 41, 0.8);
+}
